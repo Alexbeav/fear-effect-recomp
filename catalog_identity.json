@@ -1,0 +1,126 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Fear Effect",
+    "id": "SLUS-00920",
+    "boot_exe": "SLUS_009.20"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Fear Effect (USA) (Disc 1).cue",
+    "bin_name": "Fear Effect (USA) (Disc 1).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": false,
+    "data_track": {
+      "size": 487435536,
+      "md5": "e08b3a0d9694decd3ef9bc41c212bf1b",
+      "sha1": "e96eb6d83dd890103b3d3511cb84da73adab2cde",
+      "crc32": "0044d5f7"
+    },
+    "disc_fp": "34f0662b25c220893726f57d3b1f7f8a3b2784aa813b923794d50d5122dca78f",
+    "discs": [
+      {
+        "index": 1,
+        "cue_name": "Fear Effect (USA) (Disc 1).cue",
+        "bin_name": "Fear Effect (USA) (Disc 1).bin",
+        "size": 487435536,
+        "md5": "e08b3a0d9694decd3ef9bc41c212bf1b",
+        "sha1": "e96eb6d83dd890103b3d3511cb84da73adab2cde",
+        "crc32": "0044d5f7",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Fear Effect (USA) (Disc 1).bin",
+            "size": "487435536",
+            "crc": "0044d5f7",
+            "md5": "e08b3a0d9694decd3ef9bc41c212bf1b",
+            "sha1": "e96eb6d83dd890103b3d3511cb84da73adab2cde"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "cue_name": "Fear Effect (USA) (Disc 2).cue",
+        "bin_name": "Fear Effect (USA) (Disc 2).bin",
+        "size": 505757616,
+        "md5": "dff47ce1c1ec5a9c5a35820224486b22",
+        "sha1": "0c2ffb3dd07ffb628b1fa69ca841cec141da11dd",
+        "crc32": "cb8e774f",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Fear Effect (USA) (Disc 2).bin",
+            "size": "505757616",
+            "crc": "cb8e774f",
+            "md5": "dff47ce1c1ec5a9c5a35820224486b22",
+            "sha1": "0c2ffb3dd07ffb628b1fa69ca841cec141da11dd"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "cue_name": "Fear Effect (USA) (Disc 3).cue",
+        "bin_name": "Fear Effect (USA) (Disc 3).bin",
+        "size": 451666320,
+        "md5": "cd6fc71e6f452e1b4027250dd7d6d65c",
+        "sha1": "a4205816f6486d8d1f5b97195370fd402003f983",
+        "crc32": "fd0f561b",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Fear Effect (USA) (Disc 3).bin",
+            "size": "451666320",
+            "crc": "fd0f561b",
+            "md5": "cd6fc71e6f452e1b4027250dd7d6d65c",
+            "sha1": "a4205816f6486d8d1f5b97195370fd402003f983"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "cue_name": "Fear Effect (USA) (Disc 4).cue",
+        "bin_name": "Fear Effect (USA) (Disc 4).bin",
+        "size": 509955936,
+        "md5": "e269350708617a92359ceef2d7838f3c",
+        "sha1": "bc1762d51eb1e35b940ae304af6622e9d9eb989d",
+        "crc32": "9853995e",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Fear Effect (USA) (Disc 4).bin",
+            "size": "509955936",
+            "crc": "9853995e",
+            "md5": "e269350708617a92359ceef2d7838f3c",
+            "sha1": "bc1762d51eb1e35b940ae304af6622e9d9eb989d"
+          }
+        ]
+      }
+    ]
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80058240",
+    "text_size": "0x00073000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1121,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

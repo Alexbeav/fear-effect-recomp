@@ -1,0 +1,46 @@
+
+[game]
+name = "Fear Effect"
+id = "SLUS-00920"
+players = 1
+exe = "disc/SLUS_009.20"
+disc = "disc/Fear Effect (USA) (Disc 1).cue"
+load_address = "0x80010000"
+entry_pc = "0x80058240"
+text_size = "0x00073000"
+stack_base = "0x801FFFF0"
+discs = ["disc/Fear Effect (USA) (Disc 1).cue", "disc/Fear Effect (USA) (Disc 2).cue", "disc/Fear Effect (USA) (Disc 3).cue", "disc/Fear Effect (USA) (Disc 4).cue"]
+disc_serials = ["SLUS-00920", "SLUS-01056", "SLUS-01057", "SLUS-01058"]
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Fear Effect (USA) (Disc 1).bin"
+cue_name = "Fear Effect (USA) (Disc 1).cue"
+boot_exe = "SLUS_009.20"
+known_sizes = [487435536]
+known_md5 = ["e08b3a0d9694decd3ef9bc41c212bf1b"]
+known_sha1 = ["e96eb6d83dd890103b3d3511cb84da73adab2cde"]
+known_crc32 = ["0044d5f7"]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Fear Effect Recompiled"
+memcard_dir = "saves"
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "34f0662b25c220893726f57d3b1f7f8a3b2784aa813b923794d50d5122dca78f"
